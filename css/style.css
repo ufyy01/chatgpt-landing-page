@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+@keyframes bg-ani {
+  0% {
+    background-position: 20% 50%;
+  }
+  50% {
+    background-position: 100% 80%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom right, #013d7c 5%, #01438a 10%, #012950, #000408, #012950, #002c5a) 100%;
+  width: 100%;
+  height: 100vh;
+  background-size: 300% 300%;
+  overflow-x: hidden;
+  animation: bg-ani 15s ease-in-out infinite;
+  font-family: Manrope, sans-serif;
+}
+
+.header .navbar a, .header button {
+  color: white !important;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24.59px;
+}
+.header button:nth-of-type(1) {
+  background-color: transparent;
+  border: none;
+}
+.header button:nth-of-type(2) {
+  background-color: #ff4820;
+}
+
+.hero .hero-heading {
+  background: -webkit-linear-gradient(155deg, rgb(244, 152, 103) 20%, rgb(174, 103, 250) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 75px;
+  letter-spacing: -4%;
+}
+.hero .hero-para, .hero ::-webkit-input-placeholder {
+  color: #81afdd;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27.32px;
+}
+.hero ::-webkit-input-placeholder {
+  color: #3D6184;
+  text-transform: capitalize;
+}
+.hero .hero-form input {
+  background-color: #052D56;
+  border: none;
+}
+.hero .hero-form span {
+  background-color: #ff4820;
+  border: none;
+  text-transform: capitalize;
+  font-size: 20px;
+  line-height: 27.32px;
+  font-weight: 700;
+  color: white;
+}
+.hero .hero-footer img {
+  width: 30%;
+  height: 30%;
+}
+.hero .hero-footer-para {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 37.61px;
+  color: white;
+}
+.hero .hero-right-img img {
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

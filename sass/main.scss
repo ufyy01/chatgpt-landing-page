@@ -1,0 +1,76 @@
+@use 'index' as *;
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    @include bg-color-linear;
+    font-family: $main-font;
+}
+.header {
+    .navbar a, button {
+        color: white !important;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24.59px;
+    }
+    button:nth-of-type(1) {
+        background-color: transparent;
+        border: none;
+    }
+    button:nth-of-type(2) {
+        background-color: #ff4820;
+    }
+}
+.hero {
+    #{&}-heading {
+        @include text-color-linear;
+        font-weight: 800;
+        font-size: 62px;
+        line-height: 75px;
+        letter-spacing: -4%;
+        
+    }
+    #{&}-para, ::-webkit-input-placeholder {
+        color: $main-text-color;
+        font-weight: 400;
+        @include hero-text-para;
+    }
+    ::-webkit-input-placeholder {
+    color: #3D6184;
+    text-transform: capitalize;
+    }
+    #{&}-form {
+        input {
+            background-color: #052D56;
+            border: none;
+        }
+        span {
+            background-color: #ff4820;
+            border: none;
+            text-transform: capitalize;
+            @include hero-text-para;
+            font-weight: 700;
+            color: white;
+        }
+        
+    }
+    #{&}-footer {
+        img {
+            width: 30%;
+            height: 30%;
+        }
+        &-para{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 37.61px;
+            color: white;
+        }
+    }
+    #{&}-right-img img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
