@@ -12,7 +12,7 @@
 }
 @keyframes bg-vector {
   0% {
-    transform: translateY(-10vh);
+    transform: translateY(0);
     opacity: 0;
   }
   50% {
@@ -22,7 +22,7 @@
     opacity: 0.5;
   }
   100% {
-    transform: translateY(-95vh);
+    transform: translateY(-120vh);
     opacity: 0;
   }
 }
