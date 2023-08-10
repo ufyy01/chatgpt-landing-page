@@ -1,13 +1,13 @@
 @keyframes bg-ani { 
     0% {
-    background-position:  30% 50%;
+    background-position:  0% 50%;
     }
     50% { background-position:  100% 50%; }
-    100% { background-position:  50% 50%;}
+    100% { background-position:  0% 50%;}
 }
 @keyframes bg-vector {
     0% {
-        transform: translateY(0);
+        transform: translateY(-10vh);
         opacity: 0;
     }
     50% {

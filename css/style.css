@@ -1,18 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
 @keyframes bg-ani {
   0% {
-    background-position: 30% 50%;
+    background-position: 0% 50%;
   }
   50% {
     background-position: 100% 50%;
   }
   100% {
-    background-position: 50% 50%;
+    background-position: 0% 50%;
   }
 }
 @keyframes bg-vector {
   0% {
-    transform: translateY(0);
+    transform: translateY(-10vh);
     opacity: 0;
   }
   50% {
@@ -33,14 +33,15 @@
 }
 
 body {
-  background: linear-gradient(to bottom right, #013d7c 5%, #01438a 10%, #012950, #000408, #012950, #002c5a) 100% no-repeat;
+  background: linear-gradient(to bottom right, #01438a 10%, #012950, #000408, #012950, #002c5a) 100% no-repeat;
   width: 100%;
   height: 100vh;
-  background-size: 400% 400%;
+  background-size: 300% 500%;
   overflow-x: hidden;
-  animation: bg-ani 15s ease-in-out infinite;
-  font-family: Manrope, sans-serif;
-  position: relative;
+  animation: bg-ani 8s ease-in-out infinite;
+  background-attachment: fixed;
+  font-family: 100% Manrope, sans-serif;
+  background-color: #021427;
 }
 
 .header .navbar a, .header button {
@@ -63,8 +64,9 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 800;
-  font-size: 62px;
+  font-size: 58px;
   line-height: 75px;
+  width: 700px;
   letter-spacing: -4%;
 }
 .hero .hero-para, .hero ::-webkit-input-placeholder {
@@ -100,13 +102,134 @@ body {
   line-height: 37.61px;
   color: white;
 }
-.hero .hero-right-img img {
-  max-width: fit-content;
+
+.hero-logos .img1 {
+  width: 7%;
+}
+.hero-logos .img2 {
+  width: 8%;
+}
+.hero-logos .img3 {
+  width: 9%;
+}
+.hero-logos .img4 {
+  width: 10%;
+}
+.hero-logos .img5 {
+  width: 8%;
+}
+
+.about-row {
+  background: linear-gradient(150deg, #31415a, #042c54, #042c54, #1870ce);
+}
+.about-row .about-row1 p {
+  width: 700px;
+}
+.about-row .about-row3 p {
+  width: 320px;
+}
+.about .dash {
+  width: 50px;
+  height: 5px;
+  background: linear-gradient(to left, rgb(244, 152, 103) 20%, rgb(174, 103, 250));
+  margin-bottom: 10px;
+}
+.about h3 {
+  font-weight: 800;
+  color: white;
+  font-size: 24px;
+  margin-bottom: 60px;
+}
+.about p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #81afdd;
+}
+.about .about-row2 p {
+  color: #ff8a71;
+}
+.about .about-row2 h2 {
+  background: -webkit-linear-gradient(155deg, rgb(244, 152, 103) 20%, rgb(174, 103, 250) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 34px;
+  line-height: 45px;
+  font-weight: 800;
+  width: 470px;
+}
+
+.benefits {
+  margin-top: 170px;
+}
+.benefits h2 {
+  background: -webkit-linear-gradient(155deg, rgb(244, 152, 103) 20%, rgb(174, 103, 250) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 34px;
+  line-height: 45px;
+  font-weight: 800;
+  width: 470px;
+}
+.benefits p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #81afdd;
+}
+.benefits .p-color {
+  color: #ff8a71;
+}
+.benefits .p-size {
+  font-size: 14px;
+  line-height: 24px;
+}
+.benefits .dash {
+  width: 50px;
+  height: 5px;
+  background: linear-gradient(to left, rgb(244, 152, 103) 20%, rgb(174, 103, 250));
+  margin-bottom: 10px;
+  width: 30px;
+}
+.benefits h4 {
+  font-weight: 800;
+  color: white;
+  font-size: 24px;
+  margin-bottom: 60px;
+  font-size: 18px;
+}
+
+.features .text-right p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #81afdd;
+}
+.features .text-right p:nth-of-type(1) {
+  color: #71e5ff;
+}
+.features .text-right h2 {
+  font-size: 34px;
+  line-height: 45px;
+  font-weight: 800;
+  width: 470px;
+  background: -webkit-linear-gradient(155deg, rgb(244, 152, 103) 20%, rgb(174, 103, 250) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.features .text-right p:nth-of-type(2) {
+  font-size: 16px;
+}
+.features .text-right p:nth-of-type(3) {
+  color: #ff8a71;
 }
 
 .background-vector {
   width: 100%;
-  bottom: -200px;
+  bottom: -10%;
   z-index: -1;
 }
 .background-vector img {
@@ -114,22 +237,22 @@ body {
   animation: bg-vector 7s linear infinite;
 }
 .background-vector img:nth-child(1) {
-  animation-delay: 2s;
+  animation-delay: 12s;
 }
 .background-vector img:nth-child(2) {
-  animation-delay: 1s;
+  animation-delay: 2s;
 }
 .background-vector img:nth-child(3) {
-  animation-delay: 3s;
+  animation-delay: 10s;
 }
 .background-vector img:nth-child(4) {
-  animation-delay: 4.5s;
+  animation-delay: 4s;
 }
 .background-vector img:nth-child(5) {
-  animation-delay: 3s;
+  animation-delay: 8s;
 }
 .background-vector img:nth-child(6) {
-  animation-delay: 1.5s;
+  animation-delay: 3.5s;
 }
 .background-vector img:nth-child(7) {
   animation-delay: 7s;
@@ -138,34 +261,46 @@ body {
   animation-delay: 2.5s;
 }
 .background-vector img:nth-child(9) {
-  animation-delay: 1.8s;
+  animation-delay: 1s;
 }
 .background-vector img:nth-child(10) {
   animation-delay: 2s;
 }
 .background-vector img:nth-child(11) {
-  animation-delay: 1s;
+  animation-delay: 4s;
 }
 .background-vector img:nth-child(12) {
-  animation-delay: 3s;
+  animation-delay: 5s;
 }
 .background-vector img:nth-child(13) {
-  animation-delay: 4.5s;
-}
-.background-vector img:nth-child(14) {
-  animation-delay: 3s;
-}
-.background-vector img:nth-child(15) {
-  animation-delay: 1.5s;
-}
-.background-vector img:nth-child(16) {
   animation-delay: 7s;
 }
+.background-vector img:nth-child(14) {
+  animation-delay: 6s;
+}
+.background-vector img:nth-child(15) {
+  animation-delay: 4s;
+}
+.background-vector img:nth-child(16) {
+  animation-delay: 9s;
+}
 .background-vector img:nth-child(17) {
-  animation-delay: 2.5s;
+  animation-delay: 11s;
 }
 .background-vector img:nth-child(18) {
-  animation-delay: 1.8s;
+  animation-delay: 4s;
+}
+.background-vector img:nth-child(19) {
+  animation-delay: 8s;
+}
+.background-vector img:nth-child(20) {
+  animation-delay: 1s;
+}
+.background-vector img:nth-child(21) {
+  animation-delay: 3.5s;
+}
+.background-vector img:nth-child(22) {
+  animation-delay: 5.6s;
 }
 
 /*# sourceMappingURL=style.css.map */

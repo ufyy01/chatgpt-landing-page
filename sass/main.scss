@@ -7,8 +7,9 @@
 }
 body {
     @include bg-color-linear;
-    font-family: $main-font;
-    position: relative;
+    font-family: 100% $main-font;
+    // position: relative;
+    background-color: #021427;
 }
 .header {
     .navbar a, button {
@@ -29,8 +30,9 @@ body {
     #{&}-heading {
         @include text-color-linear;
         font-weight: 800;
-        font-size: 62px;
+        font-size: 58px;
         line-height: 75px;
+        width: 700px;
         letter-spacing: -4%;
         
     }
@@ -70,35 +72,130 @@ body {
             color: white;
         }
     }
-    #{&}-right-img img{
-        max-width: fit-content;
+
+}
+.hero-logos {
+    .img1 {
+    width: 7%
+    }
+    .img2 {
+        width: 8%
+        }
+    .img3 {
+    width: 9%
+    }
+    .img4 {
+        width: 10%
+        }
+    .img5 {
+        width: 8%
+        }
+}
+.about {
+    &-row {
+        background: linear-gradient(150deg, #31415a, #042c54, #042c54, #1870ce);
+        #{&}1 p {
+            width: 700px
+        }
+        #{&}3 p {
+            width: 320px
+        }
+    }
+    .dash {
+        @include text-dash;
+    }
+    h3 {
+        @include about-h3;
+    }
+    p {
+        @include medium-paragraph;
+    }
+    #{&}-row2 {
+        p {
+            color: #ff8a71;
+        }
+        h2 {
+            @include text-color-linear;
+            @include h2-bold
+            
+        }
     }
 }
+.benefits {
+    margin-top: 170px;
+    h2 {
+        @include text-color-linear;
+        @include h2-bold;
+    }
+    p {
+        @include medium-paragraph
+    }
+    .p-color {
+        color: #ff8a71;
+    }
+    .p-size {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .dash {
+        @include text-dash;
+        width: 30px;
+    }
+    h4 {
+        @include about-h3;
+        font-size: 18px;
+        // width: 250px;
+    }
+}
+.features {
+    .text-right {
+        p {
+            @include medium-paragraph;
+        }
+        p:nth-of-type(1){
+            color: #71e5ff;
+        }
+        h2 {
+            @include h2-bold;
+            @include text-color-linear;
+        }
+        p:nth-of-type(2){
+            font-size: 16px;
+        }
+        p:nth-of-type(3){
+            color: #ff8a71;
+        }
+    }
+}
+
+
+
+
 .background-vector{
     width: 100%;
-    bottom: -200px;
+    bottom: -10%;
     z-index: -1;
     img {
         width: 30px;
         animation: bg-vector 7s linear infinite;
     }
     & img:nth-child(1) {
-        animation-delay: 2s;
+        animation-delay: 12s;
     }
     & img:nth-child(2) {
-        animation-delay: 1s;
+        animation-delay: 2s;
     }
     & img:nth-child(3) {
-        animation-delay: 3s;
+        animation-delay: 10s;
     }
     & img:nth-child(4) {
-        animation-delay: 4.5s;
+        animation-delay: 4s;
     }
     & img:nth-child(5) {
-        animation-delay: 3s;
+        animation-delay: 8s;
     }
     & img:nth-child(6) {
-        animation-delay: 1.5s;
+        animation-delay: 3.5s;
     }
     & img:nth-child(7) {
         animation-delay: 7s;
@@ -107,33 +204,45 @@ body {
         animation-delay: 2.5s;
     }
     & img:nth-child(9) {
-        animation-delay: 1.8s;
+        animation-delay: 1s;
     }
     & img:nth-child(10) {
         animation-delay: 2s;
     }
     & img:nth-child(11) {
-        animation-delay: 1s;
+        animation-delay: 4s;
     }
     & img:nth-child(12) {
-        animation-delay: 3s;
+        animation-delay: 5s;
     }
     & img:nth-child(13) {
-        animation-delay: 4.5s;
-    }
-    & img:nth-child(14) {
-        animation-delay: 3s;
-    }
-    & img:nth-child(15) {
-        animation-delay: 1.5s;
-    }
-    & img:nth-child(16) {
         animation-delay: 7s;
     }
+    & img:nth-child(14) {
+        animation-delay: 6s;
+    }
+    & img:nth-child(15) {
+        animation-delay: 4s;
+    }
+    & img:nth-child(16) {
+        animation-delay: 9s;
+    }
     & img:nth-child(17) {
-        animation-delay: 2.5s;
+        animation-delay: 11s;
     }
     & img:nth-child(18) {
-        animation-delay: 1.8s;
+        animation-delay: 4s;
+    }
+    & img:nth-child(19) {
+        animation-delay: 8s;
+    }
+    & img:nth-child(20) {
+        animation-delay: 1s;
+    }
+    & img:nth-child(21) {
+        animation-delay: 3.5s;
+    }
+    & img:nth-child(22) {
+        animation-delay: 5.6s;
     }
 }
