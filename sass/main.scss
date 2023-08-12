@@ -103,6 +103,7 @@ body {
     h2 {
         @include text-color-linear;
         @include h2-bold;
+        width: 420px;
     }
     p {
         @include medium-paragraph;
@@ -379,6 +380,9 @@ footer {
             p:nth-of-type(2){
                 text-align: justify;
             }
+            .break {
+                display: none;
+            }
         }
     }
     .get-started {
@@ -450,9 +454,9 @@ footer {
     }
     
 }
-@media screen and (min-width: 650px) and (max-width: 650px) {
+@media screen and (min-width: 651px) and (max-width: 991px) {
     body{
-        padding: 0 15px;
+        padding: 0 20px;
     }
     .row {
         --bs-gutter-x: 0;
@@ -466,40 +470,33 @@ footer {
     }
     .hero {
         #{&}-heading {
-        line-height: 40px;
-        font-size: 30px;
+        line-height: 50px;
+        font-size: 45px;
         text-align: center;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
         }
         #{&}-para {
-            font-size: 16px;
+            font-size: 20px;
             padding: 0 5px;
             text-align: justify;
             .break {
                 display: none;
             }
         }
-        #{&}-form span {
-            margin-top: 10px;
-            display: block;
-            width: 100%;
-            text-align: center;
-        }
-        #{&}-right-img {
-            margin: 30px 0 20px;
+        #{&}-footer img {
+            margin-left: 100px;
         }
     }
     .hero-logo {
         
         img {
-            width: 20%;
+            width: 40%;
             margin-bottom: 15px;
         }
     }
     .about {
-        margin-top: 60px;
         p {
-            padding: 0 10px;
+            padding: 0 20px;
         }
         .dash {
             margin-inline: auto
@@ -509,8 +506,8 @@ footer {
         }
         #{&}-row2 {
             h2 {
-                font-size: 25px;
-                line-height: 30px;
+                font-size: 35px;
+                line-height: 50px;
                 margin-bottom: 15px;
                 padding: 0 5px;
             }
@@ -520,15 +517,12 @@ footer {
         }
     }
     .benefits {
-        margin-top: 80px;
         h2 {
-            font-size: 25px;
-            line-height: 30px; 
+            font-size: 35px;
+            line-height: 40px; 
             text-align: center;
         }
-        p {
-            @include medium-paragraph;
-        }
+
         .p-color {
             text-align: center;
         }
@@ -552,11 +546,11 @@ footer {
                 text-align: center;
             }
             h2 {
-                font-size: 25px;
-                line-height: 30px;
+                font-size: 30px;
+                line-height: 40px;
             }
             p:nth-of-type(2){
-                text-align: justify;
+                text-align: center;
             }
         }
     }
@@ -580,7 +574,7 @@ footer {
     .blog {
         h2 {
             font-size: 40px;
-            line-height: 45px;
+            line-height: 50px;
             margin-bottom: 50px;
         }
         .card {
@@ -623,6 +617,82 @@ footer {
         a {
             text-decoration: none;
         }
+        .background-vector{
+            flex-wrap: wrap;
+        }
+    }
+    
+}
+@media screen and (min-width: 992px) and (max-width: 1300px) {
+    .row {
+        --bs-gutter-x: 0;
+    }
+    .hero {
+        #{&}-heading {
+        line-height: 55px;
+        font-size: 50px;
+        }
+        #{&}-para {
+            font-size: 20px;
+            padding: 0 5px;
+            text-align: justify;
+            .break {
+                display: none;
+            }
+        }
+    }
+    .about {
+        #{&}-row2 {
+            h2 {
+                font-size: 30px;
+                line-height: 40px;
+                margin-bottom: 15px;
+                padding: 0 5px;
+            }
+        }
+        #{&}-row3 {
+            p {
+                margin-right: 30px;
+            }
+        }
+        .break {
+            display: none;
+        }
+    }
+    .benefits {
+        h2 {
+            font-size: 27px;
+            line-height: 35px; 
+            width: 320px;
+        }
+    }
+    .features {
+        .text-right {
+            margin-left: 30px;
+            h2 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            p {
+            font-size: 16px;
+            }
+        }
+    }
+    .get-started {
+        margin: 100px 0;
+    }
+    .blog {
+        .card {
+                margin: 10px 20px;
+            }  
+        .first {
+            height: 97.5%;
+            .card-text {
+                font-size: 25px;
+            }
+        }
+    }
+    footer {
         .background-vector{
             flex-wrap: wrap;
         }
