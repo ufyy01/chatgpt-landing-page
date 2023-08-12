@@ -641,6 +641,9 @@ footer {
                 display: none;
             }
         }
+        #{&}-right-img {
+            width: 90%;
+        }
     }
     .about {
         #{&}-row2 {
