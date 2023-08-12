@@ -7,8 +7,8 @@
 }
 body {
     @include bg-color-linear;
-    font-family: 100% $main-font;
-    // position: relative;
+    font: 100% $main-font;
+    position: relative;
     background-color: #021427;
 }
 .header {
@@ -32,7 +32,6 @@ body {
         font-weight: 800;
         font-size: 58px;
         line-height: 75px;
-        width: 700px;
         letter-spacing: -4%;
         
     }
@@ -74,32 +73,10 @@ body {
     }
 
 }
-.hero-logos {
-    .img1 {
-    width: 7%
-    }
-    .img2 {
-        width: 8%
-        }
-    .img3 {
-    width: 9%
-    }
-    .img4 {
-        width: 10%
-        }
-    .img5 {
-        width: 8%
-        }
-}
 .about {
+    margin-top: 100px;
     &-row {
         background: linear-gradient(150deg, #31415a, #042c54, #042c54, #1870ce);
-        #{&}1 p {
-            width: 700px
-        }
-        #{&}3 p {
-            width: 320px
-        }
     }
     .dash {
         @include text-dash;
@@ -128,7 +105,7 @@ body {
         @include h2-bold;
     }
     p {
-        @include medium-paragraph
+        @include medium-paragraph;
     }
     .p-color {
         color: #ff8a71;
@@ -136,6 +113,8 @@ body {
     .p-size {
         font-size: 14px;
         line-height: 24px;
+        padding-bottom: 15px;
+
     }
     .dash {
         @include text-dash;
@@ -144,7 +123,6 @@ body {
     h4 {
         @include about-h3;
         font-size: 18px;
-        // width: 250px;
     }
 }
 .features {
@@ -167,82 +145,487 @@ body {
         }
     }
 }
+.get-started {
+    margin: 150px 0 100px 0;
+    &-row {
+        background: linear-gradient( to left, $text-background-linear);
+    }
+    #{&}-left{
+        p {
+            @include medium-paragraph;
+            font-size: 12px;
+            color: #0e0e0e;
+            margin-bottom: 0;
+        }
+        h3 {
+            @include about-h3;
+            margin-bottom: 0;
+            color: #000000
+        }
+    }
+    #{&}-right {
+        button {
+            background-color: #000000;
+            font-weight: 700;
+            font-size: 18px;
+            color: white;
+            border: none;
+        }
+    }
+}
+.blog {
+    margin-bottom: 150px;
+    h2 {
+        font-weight: 800;
+        font-size: 62px;
+        line-height: 79px;
+        @include text-color-linear;
+        margin-bottom: 80px;
+        letter-spacing: -3px;
+    }
+    .card {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        &-body {
+            background-color: #042c54 ;
+            p {
+                font-size: 11px;
+                color: white;
+                font-weight: 700;
+            }
+            .card-text {
+                font-weight: 800;
+                font-size: 19px;
+                color: white;
+                padding-bottom: 50px;
+            }
+        }  
+    }
+    .first {
+        height: 100%;
+        .card-text {
+            font-size: 25px;
+        }
+    }
+
+}
+footer {
+    position: relative;
+    background-color: #031b34;
+    padding-top: 120px;
+    h3 {
+        @include text-color-linear;
+        font-size: 62px;
+        font-weight: 800;
+        line-height: 70px;
+        letter-spacing: -4px;
+    }
+    button {
+        background-color: transparent;
+        color: white;
+        font: 100% $footer-font;
+        border: 1px solid whitesmoke;
+        font-size: 18px;
+
+    }
+    p {
+        color: white;
+        font: 100% $footer-font;
+        font-size: 12px;
+        padding: 8px 0;
+        line-height: 20px;
+    }
+    h6 {
+        font-size: 14px;
+        color: white;
+        font: 100% $footer-font;
+    }
+    a {
+        text-decoration: none;
+    }
+    .background-vector{
+        width: 100%;
+        bottom: 0;
+        z-index: -1;
+        position: absolute;
+        img {
+            width: 30px;
+            animation: bg-vector 40s linear infinite;
+            @include delay (44);
+        }
+    
+    }
+}
 
 
 
 
-.background-vector{
-    width: 100%;
-    bottom: -10%;
-    z-index: -2;
-    img {
-        width: 30px;
-        animation: bg-vector 7s linear infinite;
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 650px) {
+    body{
+        padding: 0 15px;
     }
-    & img:nth-child(1) {
-        animation-delay: 12s;
+    .row {
+        --bs-gutter-x: 0;
     }
-    & img:nth-child(2) {
-        animation-delay: 2s;
+    .header {
+        .navbar {
+            .fa-solid {
+                font-size: 30px;
+            }
+        }
     }
-    & img:nth-child(3) {
-        animation-delay: 10s;
+    .hero {
+        #{&}-heading {
+        line-height: 40px;
+        font-size: 30px;
+        text-align: center;
+        padding-bottom: 20px;
+        }
+        #{&}-para {
+            font-size: 16px;
+            padding: 0 5px;
+            text-align: justify;
+            .break {
+                display: none;
+            }
+        }
+        #{&}-form span {
+            margin-top: 10px;
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+        #{&}-right-img {
+            margin: 30px 0 20px;
+        }
     }
-    & img:nth-child(4) {
-        animation-delay: 4s;
+    .hero-logo {
+        
+        img {
+            width: 20%;
+            margin-bottom: 15px;
+        }
     }
-    & img:nth-child(5) {
-        animation-delay: 8s;
+    .about {
+        margin-top: 60px;
+        p {
+            padding: 0 10px;
+        }
+        .dash {
+            margin-inline: auto
+        }
+        #{&}-row1 p {
+            text-align: justify;
+        }
+        #{&}-row2 {
+            h2 {
+                font-size: 25px;
+                line-height: 30px;
+                margin-bottom: 15px;
+                padding: 0 5px;
+            }
+        }
+        .break {
+            display: none;
+        }
     }
-    & img:nth-child(6) {
-        animation-delay: 3.5s;
+    .benefits {
+        margin-top: 80px;
+        h2 {
+            font-size: 25px;
+            line-height: 30px; 
+            text-align: center;
+        }
+        p {
+            @include medium-paragraph;
+        }
+        .p-color {
+            text-align: center;
+        }
+        .dash {
+            margin-inline: auto;
+            @include text-dash;
+            width: 50px;
+        }
+        h4 {
+            @include about-h3;
+            font-size: 18px;
+        }
+        .break {
+            display: none;
+        }
     }
-    & img:nth-child(7) {
-        animation-delay: 7s;
+    .features {
+        .text-right {
+            p {
+                padding-top: 15px;
+                text-align: center;
+            }
+            h2 {
+                font-size: 25px;
+                line-height: 30px;
+            }
+            p:nth-of-type(2){
+                text-align: justify;
+            }
+        }
     }
-    & img:nth-child(8) {
-        animation-delay: 2.5s;
+    .get-started {
+        margin: 100px 0;
+        #{&}-left{
+            p {
+                margin-top: 15px;
+            }
+            h3 {
+                margin: 15px 0;
+            }
+        }
+        #{&}-right {
+            button {
+                width: 90%;
+                margin: 20px 0;
+            }
+        }
     }
-    & img:nth-child(9) {
-        animation-delay: 1s;
+    .blog {
+        h2 {
+            font-size: 40px;
+            line-height: 45px;
+            margin-bottom: 50px;
+        }
+        .card {
+                padding: 20px 0;
+            }  
+        .first {
+            height: 100%;
+            .card-text {
+                font-size: 25px;
+            }
+        }
     }
-    & img:nth-child(10) {
-        animation-delay: 2s;
+    footer {
+        padding-top: 80px;
+        h3 {
+            font-size: 42px;
+            line-height: 50px;
+            letter-spacing: 0px;
+        }
+        button {
+            background-color: transparent;
+            color: white;
+            font: 100% $footer-font;
+            border: 1px solid whitesmoke;
+            font-size: 18px;
+    
+        }
+        p {
+            color: white;
+            font: 100% $footer-font;
+            font-size: 12px;
+            padding: 8px 0;
+            line-height: 20px;
+        }
+        h6 {
+            font-size: 14px;
+            color: white;
+            font: 100% $footer-font;
+        }
+        a {
+            text-decoration: none;
+        }
+        .background-vector{
+            flex-wrap: wrap;
+        }
     }
-    & img:nth-child(11) {
-        animation-delay: 4s;
+    
+}
+@media screen and (min-width: 650px) and (max-width: 650px) {
+    body{
+        padding: 0 15px;
     }
-    & img:nth-child(12) {
-        animation-delay: 5s;
+    .row {
+        --bs-gutter-x: 0;
     }
-    & img:nth-child(13) {
-        animation-delay: 7s;
+    .header {
+        .navbar {
+            .fa-solid {
+                font-size: 30px;
+            }
+        }
     }
-    & img:nth-child(14) {
-        animation-delay: 6s;
+    .hero {
+        #{&}-heading {
+        line-height: 40px;
+        font-size: 30px;
+        text-align: center;
+        padding-bottom: 20px;
+        }
+        #{&}-para {
+            font-size: 16px;
+            padding: 0 5px;
+            text-align: justify;
+            .break {
+                display: none;
+            }
+        }
+        #{&}-form span {
+            margin-top: 10px;
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+        #{&}-right-img {
+            margin: 30px 0 20px;
+        }
     }
-    & img:nth-child(15) {
-        animation-delay: 4s;
+    .hero-logo {
+        
+        img {
+            width: 20%;
+            margin-bottom: 15px;
+        }
     }
-    & img:nth-child(16) {
-        animation-delay: 9s;
+    .about {
+        margin-top: 60px;
+        p {
+            padding: 0 10px;
+        }
+        .dash {
+            margin-inline: auto
+        }
+        #{&}-row1 p {
+            text-align: justify;
+        }
+        #{&}-row2 {
+            h2 {
+                font-size: 25px;
+                line-height: 30px;
+                margin-bottom: 15px;
+                padding: 0 5px;
+            }
+        }
+        .break {
+            display: none;
+        }
     }
-    & img:nth-child(17) {
-        animation-delay: 11s;
+    .benefits {
+        margin-top: 80px;
+        h2 {
+            font-size: 25px;
+            line-height: 30px; 
+            text-align: center;
+        }
+        p {
+            @include medium-paragraph;
+        }
+        .p-color {
+            text-align: center;
+        }
+        .dash {
+            margin-inline: auto;
+            @include text-dash;
+            width: 50px;
+        }
+        h4 {
+            @include about-h3;
+            font-size: 18px;
+        }
+        .break {
+            display: none;
+        }
     }
-    & img:nth-child(18) {
-        animation-delay: 4s;
+    .features {
+        .text-right {
+            p {
+                padding-top: 15px;
+                text-align: center;
+            }
+            h2 {
+                font-size: 25px;
+                line-height: 30px;
+            }
+            p:nth-of-type(2){
+                text-align: justify;
+            }
+        }
     }
-    & img:nth-child(19) {
-        animation-delay: 8s;
+    .get-started {
+        margin: 100px 0;
+        #{&}-left{
+            p {
+                margin-top: 15px;
+            }
+            h3 {
+                margin: 15px 0;
+            }
+        }
+        #{&}-right {
+            button {
+                width: 90%;
+                margin: 20px 0;
+            }
+        }
     }
-    & img:nth-child(20) {
-        animation-delay: 1s;
+    .blog {
+        h2 {
+            font-size: 40px;
+            line-height: 45px;
+            margin-bottom: 50px;
+        }
+        .card {
+                padding: 20px 0;
+            }  
+        .first {
+            height: 100%;
+            .card-text {
+                font-size: 25px;
+            }
+        }
     }
-    & img:nth-child(21) {
-        animation-delay: 3.5s;
+    footer {
+        padding-top: 80px;
+        h3 {
+            font-size: 42px;
+            line-height: 50px;
+            letter-spacing: 0px;
+        }
+        button {
+            background-color: transparent;
+            color: white;
+            font: 100% $footer-font;
+            border: 1px solid whitesmoke;
+            font-size: 18px;
+    
+        }
+        p {
+            color: white;
+            font: 100% $footer-font;
+            font-size: 12px;
+            padding: 8px 0;
+            line-height: 20px;
+        }
+        h6 {
+            font-size: 14px;
+            color: white;
+            font: 100% $footer-font;
+        }
+        a {
+            text-decoration: none;
+        }
+        .background-vector{
+            flex-wrap: wrap;
+        }
     }
-    & img:nth-child(22) {
-        animation-delay: 5.6s;
-    }
+    
 }

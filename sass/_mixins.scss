@@ -1,16 +1,15 @@
 @use 'variables' as *;
 @mixin bg-color-linear {
-    background: linear-gradient(to bottom right,  #01438a 10%, #012950, #000408,  #012950, #002c5a) 100% no-repeat;
-    width: 100%;
+    background: $background-linear;
     height: 100vh;
     background-size: 300% 500%;
     overflow-x: hidden;
-    animation: bg-ani 8s ease-in-out infinite;
+    animation: bg-ani 10s ease-in-out infinite;
     background-attachment: fixed;
     
 }
 @mixin text-color-linear {
-    background: -webkit-linear-gradient(155deg, rgba(244,152,103,1) 20%, rgba(174,103,250,1) 100%);
+    background: -webkit-linear-gradient(155deg, $text-background-linear 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -27,19 +26,28 @@
 }
 @mixin text-dash {
     width: 50px;
-    height: 5px;
-    background: linear-gradient(to left, rgba(244,152,103,1) 20%, rgba(174,103,250,1));
+    height: 3px;
+    background: linear-gradient(to left, $text-background-linear);
     margin-bottom: 10px;
 }
 @mixin about-h3 {
     font-weight: 800;
     color: white;
     font-size: 24px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 @mixin h2-bold {
     font-size: 34px;
     line-height: 45px;
     font-weight: 800;
-    width: 470px;
+}
+@mixin delay($total-images) {
+    $max-delay: 35;
+    $min-delay: 0;
+    @for $i from 1 to $total-images {
+    $random-delay: random($max-delay - $min-delay + 1) + $min-delay;
+    &:nth-child(#{$i}) {
+    animation-delay: #{$random-delay}s;
+    }
+}
 }
