@@ -103,7 +103,7 @@ body {
     h2 {
         @include text-color-linear;
         @include h2-bold;
-        width: 420px;
+        // width: 420px;
     }
     p {
         @include medium-paragraph;
@@ -347,6 +347,7 @@ footer {
             font-size: 25px;
             line-height: 30px; 
             text-align: center;
+            width: 330px;
         }
         p {
             @include medium-paragraph;
