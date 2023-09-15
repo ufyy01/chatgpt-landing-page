@@ -103,6 +103,10 @@ body {
   color: white;
 }
 
+.hero-logo1 {
+  display: none;
+}
+
 .about {
   margin-top: 100px;
 }
@@ -325,133 +329,133 @@ footer .background-vector img {
   animation: bg-vector 40s linear infinite;
 }
 footer .background-vector img:nth-child(1) {
-  animation-delay: 15s;
+  animation-delay: 32s;
 }
 footer .background-vector img:nth-child(2) {
-  animation-delay: 15s;
+  animation-delay: 2s;
 }
 footer .background-vector img:nth-child(3) {
-  animation-delay: 2s;
-}
-footer .background-vector img:nth-child(4) {
-  animation-delay: 30s;
-}
-footer .background-vector img:nth-child(5) {
-  animation-delay: 7s;
-}
-footer .background-vector img:nth-child(6) {
-  animation-delay: 20s;
-}
-footer .background-vector img:nth-child(7) {
-  animation-delay: 22s;
-}
-footer .background-vector img:nth-child(8) {
-  animation-delay: 26s;
-}
-footer .background-vector img:nth-child(9) {
-  animation-delay: 16s;
-}
-footer .background-vector img:nth-child(10) {
-  animation-delay: 6s;
-}
-footer .background-vector img:nth-child(11) {
-  animation-delay: 14s;
-}
-footer .background-vector img:nth-child(12) {
-  animation-delay: 11s;
-}
-footer .background-vector img:nth-child(13) {
-  animation-delay: 36s;
-}
-footer .background-vector img:nth-child(14) {
-  animation-delay: 19s;
-}
-footer .background-vector img:nth-child(15) {
-  animation-delay: 33s;
-}
-footer .background-vector img:nth-child(16) {
-  animation-delay: 30s;
-}
-footer .background-vector img:nth-child(17) {
-  animation-delay: 26s;
-}
-footer .background-vector img:nth-child(18) {
   animation-delay: 17s;
 }
-footer .background-vector img:nth-child(19) {
+footer .background-vector img:nth-child(4) {
+  animation-delay: 4s;
+}
+footer .background-vector img:nth-child(5) {
+  animation-delay: 14s;
+}
+footer .background-vector img:nth-child(6) {
+  animation-delay: 18s;
+}
+footer .background-vector img:nth-child(7) {
+  animation-delay: 36s;
+}
+footer .background-vector img:nth-child(8) {
+  animation-delay: 5s;
+}
+footer .background-vector img:nth-child(9) {
+  animation-delay: 1s;
+}
+footer .background-vector img:nth-child(10) {
+  animation-delay: 23s;
+}
+footer .background-vector img:nth-child(11) {
+  animation-delay: 35s;
+}
+footer .background-vector img:nth-child(12) {
   animation-delay: 2s;
 }
-footer .background-vector img:nth-child(20) {
+footer .background-vector img:nth-child(13) {
+  animation-delay: 2s;
+}
+footer .background-vector img:nth-child(14) {
+  animation-delay: 11s;
+}
+footer .background-vector img:nth-child(15) {
+  animation-delay: 3s;
+}
+footer .background-vector img:nth-child(16) {
+  animation-delay: 32s;
+}
+footer .background-vector img:nth-child(17) {
+  animation-delay: 2s;
+}
+footer .background-vector img:nth-child(18) {
   animation-delay: 27s;
 }
-footer .background-vector img:nth-child(21) {
-  animation-delay: 19s;
-}
-footer .background-vector img:nth-child(22) {
+footer .background-vector img:nth-child(19) {
   animation-delay: 7s;
 }
+footer .background-vector img:nth-child(20) {
+  animation-delay: 6s;
+}
+footer .background-vector img:nth-child(21) {
+  animation-delay: 33s;
+}
+footer .background-vector img:nth-child(22) {
+  animation-delay: 18s;
+}
 footer .background-vector img:nth-child(23) {
-  animation-delay: 28s;
+  animation-delay: 9s;
 }
 footer .background-vector img:nth-child(24) {
   animation-delay: 10s;
 }
 footer .background-vector img:nth-child(25) {
-  animation-delay: 14s;
+  animation-delay: 30s;
 }
 footer .background-vector img:nth-child(26) {
-  animation-delay: 30s;
+  animation-delay: 36s;
 }
 footer .background-vector img:nth-child(27) {
-  animation-delay: 14s;
-}
-footer .background-vector img:nth-child(28) {
-  animation-delay: 11s;
-}
-footer .background-vector img:nth-child(29) {
-  animation-delay: 4s;
-}
-footer .background-vector img:nth-child(30) {
-  animation-delay: 15s;
-}
-footer .background-vector img:nth-child(31) {
-  animation-delay: 12s;
-}
-footer .background-vector img:nth-child(32) {
-  animation-delay: 1s;
-}
-footer .background-vector img:nth-child(33) {
-  animation-delay: 3s;
-}
-footer .background-vector img:nth-child(34) {
-  animation-delay: 3s;
-}
-footer .background-vector img:nth-child(35) {
-  animation-delay: 22s;
-}
-footer .background-vector img:nth-child(36) {
-  animation-delay: 30s;
-}
-footer .background-vector img:nth-child(37) {
-  animation-delay: 5s;
-}
-footer .background-vector img:nth-child(38) {
-  animation-delay: 14s;
-}
-footer .background-vector img:nth-child(39) {
   animation-delay: 21s;
 }
-footer .background-vector img:nth-child(40) {
+footer .background-vector img:nth-child(28) {
+  animation-delay: 16s;
+}
+footer .background-vector img:nth-child(29) {
+  animation-delay: 27s;
+}
+footer .background-vector img:nth-child(30) {
+  animation-delay: 10s;
+}
+footer .background-vector img:nth-child(31) {
   animation-delay: 9s;
+}
+footer .background-vector img:nth-child(32) {
+  animation-delay: 24s;
+}
+footer .background-vector img:nth-child(33) {
+  animation-delay: 35s;
+}
+footer .background-vector img:nth-child(34) {
+  animation-delay: 24s;
+}
+footer .background-vector img:nth-child(35) {
+  animation-delay: 3s;
+}
+footer .background-vector img:nth-child(36) {
+  animation-delay: 4s;
+}
+footer .background-vector img:nth-child(37) {
+  animation-delay: 1s;
+}
+footer .background-vector img:nth-child(38) {
+  animation-delay: 12s;
+}
+footer .background-vector img:nth-child(39) {
+  animation-delay: 12s;
+}
+footer .background-vector img:nth-child(40) {
+  animation-delay: 28s;
 }
 footer .background-vector img:nth-child(41) {
-  animation-delay: 2s;
+  animation-delay: 25s;
 }
 footer .background-vector img:nth-child(42) {
-  animation-delay: 6s;
+  animation-delay: 16s;
 }
 footer .background-vector img:nth-child(43) {
-  animation-delay: 9s;
+  animation-delay: 28s;
 }
 
 @media screen and (max-width: 650px) {
@@ -467,7 +471,6 @@ footer .background-vector img:nth-child(43) {
   .hero .hero-heading {
     line-height: 40px;
     font-size: 30px;
-    text-align: center;
     padding-bottom: 20px;
   }
   .hero .hero-para {
@@ -487,9 +490,16 @@ footer .background-vector img:nth-child(43) {
   .hero .hero-right-img {
     margin: 30px 0 20px;
   }
-  .hero-logo img {
-    width: 20%;
-    margin-bottom: 15px;
+  .hero-logo {
+    display: none;
+  }
+  .hero-logo1 {
+    display: inline;
+  }
+  .hero-logo1 .fa-brands {
+    font-size: 20px;
+    padding: 0 10px;
+    margin-left: 20px;
   }
   .about {
     margin-top: 60px;
@@ -531,7 +541,6 @@ footer .background-vector img:nth-child(43) {
     text-align: center;
   }
   .benefits .dash {
-    margin-inline: auto;
     width: 50px;
     height: 3px;
     background: linear-gradient(to left, rgb(244, 152, 103) 20%, rgb(174, 103, 250));
@@ -675,13 +684,8 @@ footer .background-vector img:nth-child(43) {
   .benefits h2 {
     font-size: 35px;
     line-height: 40px;
-    text-align: center;
-  }
-  .benefits .p-color {
-    text-align: center;
   }
   .benefits .dash {
-    margin-inline: auto;
     width: 50px;
     height: 3px;
     background: linear-gradient(to left, rgb(244, 152, 103) 20%, rgb(174, 103, 250));

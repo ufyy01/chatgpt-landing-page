@@ -73,6 +73,9 @@ body {
     }
 
 }
+.hero-logo1 {
+    display: none;
+}
 .about {
     margin-top: 100px;
     &-row {
@@ -290,7 +293,6 @@ footer {
         #{&}-heading {
         line-height: 40px;
         font-size: 30px;
-        text-align: center;
         padding-bottom: 20px;
         }
         #{&}-para {
@@ -312,10 +314,14 @@ footer {
         }
     }
     .hero-logo {
-        
-        img {
-            width: 20%;
-            margin-bottom: 15px;
+        display: none;
+    }
+    .hero-logo1 {
+        display: inline;
+        .fa-brands {
+            font-size: 20px;
+            padding: 0 10px;
+            margin-left: 20px;
         }
     }
     .about {
@@ -356,7 +362,6 @@ footer {
             text-align: center;
         }
         .dash {
-            margin-inline: auto;
             @include text-dash;
             width: 50px;
         }
@@ -521,14 +526,9 @@ footer {
         h2 {
             font-size: 35px;
             line-height: 40px; 
-            text-align: center;
         }
 
-        .p-color {
-            text-align: center;
-        }
         .dash {
-            margin-inline: auto;
             @include text-dash;
             width: 50px;
         }
